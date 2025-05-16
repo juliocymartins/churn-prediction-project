@@ -15,7 +15,6 @@ ENV/
 
 # Data files
 *.csv
-# *.xlsx
 
 # Model files
 # *.pkl
