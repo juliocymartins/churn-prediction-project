@@ -59,7 +59,7 @@ def set_background(image_file):
 set_background("app/background_churn.jpg")
 
 # ======== LOAD MODEL AND DATA ========
-model_pipeline = joblib.load('churn_gbcmodel_pipeline.pkl')
+model_pipeline = joblib.load('app/churn_gbcmodel_pipeline.pkl')
 model = model_pipeline['model']
 scaler = model_pipeline['scaler']
 cols_to_standardize = model_pipeline['cols_to_standardize']
