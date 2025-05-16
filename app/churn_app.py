@@ -56,7 +56,7 @@ def set_background(image_file):
     st.markdown(css, unsafe_allow_html=True)
 
 # Set background
-set_background("background_churn.jpg")
+set_background("app/background_churn.jpg")
 
 # ======== LOAD MODEL AND DATA ========
 model_pipeline = joblib.load('churn_gbcmodel_pipeline.pkl')
@@ -65,8 +65,8 @@ scaler = model_pipeline['scaler']
 cols_to_standardize = model_pipeline['cols_to_standardize']
 training_columns = model_pipeline['training_columns']
 
-churn_data_yes = pd.read_excel('test_churn_yes.xlsx')
-churn_data_no = pd.read_excel('test_churn_no.xlsx')
+churn_data_yes = pd.read_excel('app/test_churn_yes.xlsx')
+churn_data_no = pd.read_excel('app/test_churn_no.xlsx')
 
 # ======== FUNCTIONS ========
 def make_prediction(model, scaler, df):
