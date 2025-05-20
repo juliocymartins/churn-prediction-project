@@ -39,10 +39,12 @@ The data set includes information about:
 3. **Test with Churn Data**  
    - Click **Test with Churn Data** to auto-fill the form with a real example of a customer who **left**.  
    - The app will automatically run a prediction using this example.
+   - These data points were **not used during model training** and serve as an independent test case.
 
 4. **Test with Non-Churn Data**  
    - Click **Test with Non-Churn Data** to auto-fill the form with a real example of a customer who **did not churn**.  
    - The app will show the prediction result accordingly.
+   - These data points were **not used during model training** and serve as an independent test case.
 
 # Repository Files
 
