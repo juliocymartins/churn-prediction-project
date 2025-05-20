@@ -5,12 +5,12 @@
 # Overview
 This project focuses on predicting customer churn by analyzing behavioral, demographic, and account data. The goal is to build and deploy a machine learning model capable of identifying customers at risk of cancelling their services. The project includes a full end-to-end pipeline: data analysis, preprocessing, model training, testing, deployment via Docker, and a working web app hosted on Google Cloud Platform.
 
+### What is Churn?
+Churn refers to the rate at which customers stop doing business with a service provider. By identifying potential churners in advance, businesses can develop effective customer retention strategies.
+
 🔗 **Live App**: [Access the Churn Prediction App](https://fraud-detection-app-855024627767.us-central1.run.app/)
 
 **Link to Dataset**: [Telco Customer Churn – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-
-### What is Churn?
-Churn refers to the rate at which customers stop doing business with a service provider. By identifying potential churners in advance, businesses can develop effective customer retention strategies.
 
 # About Dataset
 
