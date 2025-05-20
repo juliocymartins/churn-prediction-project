@@ -5,16 +5,60 @@
 # Overview
 This project focuses on predicting customer churn by analyzing behavioral, demographic, and account data. The goal is to build and deploy a machine learning model capable of identifying customers at risk of cancelling their services. The project includes a full end-to-end pipeline: data analysis, preprocessing, model training, testing, deployment via Docker, and a working web app hosted on Google Cloud Platform.
 
+🔗 **Live App**: [Access the Churn Prediction App](https://fraud-detection-app-855024627767.us-central1.run.app/)
+
+**Link to Dataset**: [Telco Customer Churn – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
 ### What is Churn?
 Churn refers to the rate at which customers stop doing business with a service provider. By identifying potential churners in advance, businesses can develop effective customer retention strategies.
 
-Link to Dataset: [Telco Customer Churn – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+# About Dataset
 
-## 🌐 Web Application
-Try the deployed Churn Prediction App here:  
-🔗 [https://churn-detection-app-855024627767.us-central1.run.app/](https://churn-detection-app-855024627767.us-central1.run.app/)
+### Context
+"Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs." [IBM Sample Data Sets]
 
-## Required Libraries
+### Content
+Each row represents a customer, each column contains customer’s attributes described on the column Metadata.
+
+The data set includes information about:
+
+- Customers who left within the last month – the column is called Churn
+- Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
+- Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
+- Demographic info about customers – gender, age range, and if they have partners and dependents
+
+# How to Use the App
+
+1. **Adjust the Input Settings**  
+   Use the sidebar to fill in customer data, such as **tenure**, **monthly charges**, **internet services**, and **contract type**.
+
+2. **Predict**  
+   - Click **Predict** to generate a churn prediction based on the current input values.  
+   - The result will indicate whether the customer is likely to **churn** or **stay**, along with the **probability**.
+
+3. **Test with Churn Data**  
+   - Click **Test with Churn Data** to auto-fill the form with a real example of a customer who **left**.  
+   - The app will automatically run a prediction using this example.
+
+4. **Test with Non-Churn Data**  
+   - Click **Test with Non-Churn Data** to auto-fill the form with a real example of a customer who **did not churn**.  
+   - The app will show the prediction result accordingly.
+
+# Repository Files
+
+- **app/**: Contains the application files:
+
+- **notebooks/**: Contains the Jupyter notebooks and related scripts:
+
+- **Dockerfile**: Configuration for building the Docker container.
+
+- **requirements.txt**: List of required Python packages.
+
+- **.gitignore**: Git ignored files.
+
+- **README.md**: Project documentation.
+
+# Required Libraries
 To run this project, the following Python packages are needed:
 
 - pandas
@@ -27,28 +71,16 @@ To run this project, the following Python packages are needed:
 - streamlit
 - openpyxl
 
-Install everything using the `requirements.txt` file:
+# How to Use Locally
+- Clone the repository to your local machine
+- Install dependencies
+- Run the Streamlit app
 
-pip install -r requirements.txt
+# GCP Deployment
+This project was successfully deployed on Google Cloud Platform (GCP) using a Docker container as a study of end-to-end machine learning deployment.
 
-## Repository Files
-- **app/**: Contains the application files:
-  - `churn_app.py`: Streamlit app to input variables and return predictions.
-  - `churn_gbcmodel_pipeline.pkl`: Serialized pipeline and trained model.
-  - `background_churn.jpg`: Background image used in the app.
-  - `test_churn_yes.xlsx`: Sample of churn transactions for testing.
-  - `test_churn_no.xlsx`: Sample of non-churn transactions for testing.
+# Author
+Julio Cesar Yamashita Martins
 
-- **notebooks/**: Contains the Jupyter notebooks and related scripts:
-  - `churn_prediction_notebook.ipynb`: Complete analysis and model development process.
-  - `churn_predictions.py`: Script for training the model and saving the pipeline.
-  - `churn_test_datasets.ipynb`: Creates testing datasets used in the app.
-  - `functions.py`: Helper functions used in the project.
-
-- **Dockerfile**: Configuration for building the Docker container.
-
-- **requirements.txt**: List of required Python packages.
-
-- **.gitignore**: Git ignored files.
-
-- **README.md**: Project documentation.
+# E-mail
+yamashitajulio@gmail.com

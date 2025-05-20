@@ -4,14 +4,11 @@ This folder contains the full machine learning development process for detecting
 
 ## Contents
 
-The notebooks/ folder contains the model building pipeline and data preparation.
-
 - `churn_prediction_notebook.ipynb`: Main Jupyter Notebook detailing the full ML workflow:
   - Exploratory Data Analysis (EDA)
   - Feature Engineering
   - Model comparison
   - Final pipeline creation
-  - Exporting the model with joblib
 - `churn_predictions.py`: Script version of the notebook for faster execution and exporting the model pipeline as `churn_gbcmodel_pipeline.pkl`.
 - `churn_test_datasets.ipynb`: Notebook used to filter and generate testing datasets for app evaluation:
   - `test_churn_yes.xlsx`
@@ -20,4 +17,10 @@ The notebooks/ folder contains the model building pipeline and data preparation.
 
 ## How to Use
 
-You can open and run the notebooks in your preferred environment (JupyterLab, VSCode, Google Colab, etc). Make sure the dataset is available and the required packages are installed.
+1. **Download the Dataset**  
+   - First, download the dataset from [Telco Customer Churn – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+   - Place the downloaded `WA_Fn-UseC_-Telco-Customer-Churn.csv` file in the same folder as the notebooks.
+
+2. **Run the Notebooks**  
+   - Open and run the notebooks in your preferred environment (JupyterLab, VSCode, Google Colab, etc).
+   - Ensure all required Python packages are installed (e.g., `pandas`, `scikit-learn`, `matplotlib`, etc).
