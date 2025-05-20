@@ -8,7 +8,7 @@ This project focuses on predicting customer churn by analyzing behavioral, demog
 ### What is Churn?
 Churn refers to the rate at which customers stop doing business with a service provider. By identifying potential churners in advance, businesses can develop effective customer retention strategies.
 
-🔗 **Live App**: [Access the Churn Prediction App](https://fraud-detection-app-855024627767.us-central1.run.app/)
+🔗 **Live App**: [Access the Churn Prediction App](https://churn-prediction-app-387157899811.us-central1.run.app/)
 
 **Link to Dataset**: [Telco Customer Churn – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
